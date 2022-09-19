@@ -4,7 +4,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-const schema = mongoose.schema;
+const schema = mongoose.Schema;
 
 const personSchema = new schema({
   name: { type: String, required: true },
